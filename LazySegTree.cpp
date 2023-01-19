@@ -1,17 +1,17 @@
-struct node {
-    ll lazy, val;
-
-    node() {
-        lazy = val = 0;
-    }
-
-    node(ll x) {
-        lazy = 0;
-        val = x;
-    }
-};
-
 struct SegTree {
+    struct node {
+        ll lazy, val;
+
+        node() {
+            lazy = val = 0;
+        }
+
+        node(ll x) {
+            lazy = 0;
+            val = x;
+        }
+    };
+
     vector<node> tree;
     node id;
     ll n;
